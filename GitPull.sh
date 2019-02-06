@@ -28,7 +28,7 @@ echo -en "\033]0;GitPull v0.01 Ran Crump\a"
 echo "Git Stash?"
 read -n 1 Stash
 
-if ($Stash == "y"); then
+if ("$Stash" == "y"); then
   GitStash
 else
   GitPull
