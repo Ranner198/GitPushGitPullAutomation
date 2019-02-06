@@ -5,6 +5,9 @@ function GitStash {
 	git add .
 	git stash
 	git pull
+
+	echo you did a stash
+
 	Quit
 }
 
@@ -13,7 +16,7 @@ function GitPull {
 	git commit -m "GitPull Automation"
 	git pull
 
-	echo "$Stash"
+	echo you did a pull
 
 	Quit	
 }
