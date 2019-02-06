@@ -4,7 +4,7 @@
 function PushComment {
 	echo PushComment.
 	git add .
-	git commit "{$Input}"
+	git commit -m "$Input"
 	git pull
 	git push
 	Quit
