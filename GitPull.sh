@@ -33,6 +33,7 @@ echo -en "\033]0;GitPull v0.01 Ran Crump\a"
 
 echo "Git Stash?"
 read -n 1 Stash
+echo " "
 
 if (["$Stash" = "y"]); then
   GitStash
