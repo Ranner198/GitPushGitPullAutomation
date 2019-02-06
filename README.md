@@ -13,18 +13,18 @@
   2. Open Terminal...
 
 #### Pulling
-'
+`
   CD (Change Directory) <the location of the repository>
   //Run Bash Script
   bash GitPull.sh
-'
+`
 
 #### Pushing
-'
+`
   CD (Change Directory) <the location of the repository>
   //Run Bash Script
   bash GitPush.sh
-'
+`
 
 ### Windows B)
 
