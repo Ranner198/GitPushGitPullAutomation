@@ -2,6 +2,7 @@
 
 #Functions
 function PushComment {
+	echo PushComment.
 	git add .
 	git commit "{$Input}"
 	git pull
@@ -10,6 +11,7 @@ function PushComment {
 }
 
 function PushEmpty {
+	echo PushEmpty.
 	git add .
 	git commit -a --allow-empty-message -m ''
 	git pull
@@ -30,7 +32,7 @@ echo -en "\033]0;GitPull v0.01 Ran Crump\a"
 echo "Insert a commit message or leave blank:"
 read Input
 
-if ("$Input" != "" && "$Input" != " "); then
+if [ "$Input" != "" ]; then
   PushComment
 else
   PushEmpty
